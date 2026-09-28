@@ -1,0 +1,6 @@
+{
+  "name": "OpsNexus - Enterprise Company Management & Operations System",
+  "description": "Production-ready internal operations platform for workforce management, projects, tasks, attendance, leave, payroll, team messaging, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,668 @@
+{
+  "roles": [
+    {
+      "id": "role-super-admin",
+      "name": "Super Admin",
+      "description": "Full system privileges and administrative oversight",
+      "is_system": true,
+      "created_at": "2026-09-28T11:52:59.575Z",
+      "updated_at": "2026-09-28T11:52:59.575Z"
+    },
+    {
+      "id": "role-admin-hr",
+      "name": "Admin / HR Manager",
+      "description": "Human resources, attendance, leave, and operational management",
+      "is_system": true,
+      "created_at": "2026-09-28T11:52:59.575Z",
+      "updated_at": "2026-09-28T11:52:59.575Z"
+    },
+    {
+      "id": "role-project-manager",
+      "name": "Project Manager",
+      "description": "Project planning, task distribution, and milestone tracking",
+      "is_system": true,
+      "created_at": "2026-09-28T11:52:59.575Z",
+      "updated_at": "2026-09-28T11:52:59.575Z"
+    },
+    {
+      "id": "role-team-lead",
+      "name": "Team Lead",
+      "description": "Team coordination, task reviews, and squad guidance",
+      "is_system": true,
+      "created_at": "2026-09-28T11:52:59.575Z",
+      "updated_at": "2026-09-28T11:52:59.575Z"
+    },
+    {
+      "id": "role-staff",
+      "name": "Staff / Employee",
+      "description": "Standard team member access for personal tasks and attendance",
+      "is_system": true,
+      "created_at": "2026-09-28T11:52:59.575Z",
+      "updated_at": "2026-09-28T11:52:59.575Z"
+    }
+  ],
+  "permissions": [],
+  "role_permissions": [],
+  "users": [
+    {
+      "id": "user-admin-root",
+      "username": "admin",
+      "email": "admin@opsnexus.internal",
+      "password_hash": "$2b$10$E1v.wrfBjI4VarUbMvDReeGBYt9M4h42vcx.QhiYDaR/flaHG0qHG",
+      "role_id": "role-super-admin",
+      "status": "Active",
+      "must_change_password": true,
+      "needs_password_change": true,
+      "password_changed_at": null,
+      "password_reset_at": null,
+      "password_reset_by": null,
+      "failed_login_attempts": 0,
+      "lockout_until": null,
+      "locked_until": null,
+      "last_login_at": "2026-09-28T16:00:56.327Z",
+      "refresh_token_hash": "$2b$08$QKn8ITm1IUg5LzQ7q/LKqedk6r2k2p4ee26A2QAsUTI/9KFTfJjkW",
+      "created_at": "2026-09-28T11:52:59.576Z",
+      "updated_at": "2026-09-28T15:55:17.434Z"
+    }
+  ],
+  "departments": [],
+  "employee_profiles": [
+    {
+      "id": "profile-admin-root",
+      "user_id": "user-admin-root",
+      "employee_id": "EMP-001",
+      "full_name": "System Administrator",
+      "position": "Principal Administrator",
+      "employment_type": "Full-Time",
+      "basic_salary": 0,
+      "skills": [
+        "System Administration",
+        "Operations Oversight",
+        "Executive Leadership"
+      ],
+      "bio": "Primary system administrator for OpsNexus internal operations platform.",
+      "created_at": "2026-09-28T11:52:59.576Z",
+      "updated_at": "2026-09-28T11:52:59.576Z"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "fdb5fd38-fd79-4257-8469-9f12fcfb8507",
+      "user_id": "user-admin-root",
+      "date": "2026-09-28",
+      "check_in_time": "2026-09-28T15:55:52.534Z",
+      "check_out_time": "2026-09-28T15:55:53.399Z",
+      "total_working_hours": 0,
+      "status": "Late",
+      "notes": "",
+      "created_at": "2026-09-28T15:55:52.534Z",
+      "updated_at": "2026-09-28T15:55:53.399Z"
+    }
+  ],
+  "leave_types": [
+    {
+      "id": "lt-1",
+      "name": "Annual Leave",
+      "days_allowed": 14,
+      "is_paid": true,
+      "description": "Standard paid annual vacation leave",
+      "created_at": "2026-09-28T11:52:59.576Z"
+    },
+    {
+      "id": "lt-2",
+      "name": "Sick Leave",
+      "days_allowed": 10,
+      "is_paid": true,
+      "description": "Paid medical and sick leave",
+      "created_at": "2026-09-28T11:52:59.576Z"
+    },
+    {
+      "id": "lt-3",
+      "name": "Casual Leave",
+      "days_allowed": 7,
+      "is_paid": true,
+      "description": "Short-notice personal leave",
+      "created_at": "2026-09-28T11:52:59.576Z"
+    },
+    {
+      "id": "lt-4",
+      "name": "Unpaid Leave",
+      "days_allowed": 30,
+      "is_paid": false,
+      "description": "Unpaid absence approved by management",
+      "created_at": "2026-09-28T11:52:59.576Z"
+    },
+    {
+      "id": "lt-5",
+      "name": "Maternity/Paternity Leave",
+      "days_allowed": 60,
+      "is_paid": true,
+      "description": "Parental leave for childbirth and care",
+      "created_at": "2026-09-28T11:52:59.576Z"
+    }
+  ],
+  "leave_requests": [],
+  "projects": [],
+  "project_members": [],
+  "tasks": [],
+  "task_comments": [],
+  "payroll": [],
+  "overtime_records": [],
+  "conversations": [],
+  "conversation_members": [],
+  "messages": [],
+  "internal_emails": [],
+  "file_vault": [],
+  "notifications": [
+    {
+      "id": "9eb74009-5080-406e-920a-38c517c9fc24",
+      "user_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "type": "ACCOUNT_CREATED",
+      "title": "Welcome to OpsNexus!",
+      "description": "Your employee profile has been created. Please complete your security profile and change your temporary password.",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "is_read": false,
+      "created_at": "2026-09-28T15:53:52.000Z"
+    }
+  ],
+  "announcements": [],
+  "audit_logs": [
+    {
+      "id": "72b79ed9-7e15-46df-82cc-044d0c8fca9c",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T16:00:56.359Z"
+    },
+    {
+      "id": "df73a7bf-2983-45c4-97e1-62e46425122c",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T16:00:43.766Z"
+    },
+    {
+      "id": "228cb4bd-c191-4df0-bd2c-a79942bcb152",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_FAILED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "reason": "Incorrect password"
+      },
+      "created_at": "2026-09-28T15:59:53.861Z"
+    },
+    {
+      "id": "a77a0185-7008-4979-aa1b-2b63fa6c86c3",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_FAILED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "reason": "Incorrect password"
+      },
+      "created_at": "2026-09-28T15:59:50.164Z"
+    },
+    {
+      "id": "9505e1d0-52bb-40a2-bcea-8a840240bd87",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_FAILED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "reason": "Incorrect password"
+      },
+      "created_at": "2026-09-28T15:59:38.580Z"
+    },
+    {
+      "id": "6cbfb535-4e96-40f3-a32e-9a8d380c4bc6",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_FAILED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "reason": "Incorrect password"
+      },
+      "created_at": "2026-09-28T15:59:28.481Z"
+    },
+    {
+      "id": "051b9e35-c2ba-4df0-8c06-92293e96f2a7",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "ATTENDANCE_CHECK_OUT",
+      "entity_type": "ATTENDANCE",
+      "entity_id": "fdb5fd38-fd79-4257-8469-9f12fcfb8507",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "date": "2026-09-28",
+        "hours": 0
+      },
+      "created_at": "2026-09-28T15:55:53.400Z"
+    },
+    {
+      "id": "2097b17a-8a65-4b46-aeb4-98a14208b24b",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "ATTENDANCE_CHECK_IN",
+      "entity_type": "ATTENDANCE",
+      "entity_id": "fdb5fd38-fd79-4257-8469-9f12fcfb8507",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "date": "2026-09-28",
+        "time": "2026-09-28T15:55:52.534Z"
+      },
+      "created_at": "2026-09-28T15:55:52.534Z"
+    },
+    {
+      "id": "019bf6b5-a3fe-46a4-9775-a561414f2679",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "FIRST_LOGIN_PASSWORD_CHANGED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "username": "admin",
+        "notice": "User changed initial temporary credentials; must_change_password set to false"
+      },
+      "created_at": "2026-09-28T15:55:17.563Z"
+    },
+    {
+      "id": "060843bd-6868-4313-b3b1-262c165cf25a",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:54:47.206Z"
+    },
+    {
+      "id": "48157313-a51a-45ec-b6de-b9cb5e6e2e0b",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Staff / Employee"
+      },
+      "created_at": "2026-09-28T15:53:52.751Z"
+    },
+    {
+      "id": "44a06702-526a-4c4c-bb19-0ea150982ad6",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Staff / Employee"
+      },
+      "created_at": "2026-09-28T15:53:52.614Z"
+    },
+    {
+      "id": "31d10922-a71d-49a2-af3d-cdf209ad3b69",
+      "user_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "user_email": "employee01@opsnexus.internal",
+      "user_role": "Staff / Employee",
+      "action": "LOGOUT",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {},
+      "created_at": "2026-09-28T15:53:52.476Z"
+    },
+    {
+      "id": "a1de84b7-9489-49c7-896e-5629317296e4",
+      "user_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "user_email": "employee01@opsnexus.internal",
+      "user_role": "Staff / Employee",
+      "action": "FIRST_LOGIN_PASSWORD_CHANGED",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "username": "employee01",
+        "notice": "User changed initial temporary credentials; must_change_password set to false"
+      },
+      "created_at": "2026-09-28T15:53:52.469Z"
+    },
+    {
+      "id": "100c1198-3253-4f18-a1b0-4ceeffa635e8",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Staff / Employee"
+      },
+      "created_at": "2026-09-28T15:53:52.235Z"
+    },
+    {
+      "id": "7dd35e86-09a5-44bf-b302-ce4b3dfeb22a",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "EMPLOYEE_CREATED",
+      "entity_type": "USER",
+      "entity_id": "043715fb-5b06-4686-baca-565e70b287fa",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "username": "employee01",
+        "email": "employee01@opsnexus.internal",
+        "employee_id": "EMP-002"
+      },
+      "created_at": "2026-09-28T15:53:52.103Z"
+    },
+    {
+      "id": "b90cb93e-f80d-44e9-a2f6-d8b1415ac097",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:53:51.988Z"
+    },
+    {
+      "id": "f3cc43c9-db6f-4177-89c2-5d2ed1075250",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:53:51.847Z"
+    },
+    {
+      "id": "f6d60b96-4e8a-4bac-ad16-5b19cbdffc3b",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "LOGOUT",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {},
+      "created_at": "2026-09-28T15:53:51.708Z"
+    },
+    {
+      "id": "694e38db-e66b-491e-8efc-e18dcee6290c",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "FIRST_LOGIN_PASSWORD_CHANGED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "username": "admin",
+        "notice": "User changed initial temporary credentials; must_change_password set to false"
+      },
+      "created_at": "2026-09-28T15:53:51.699Z"
+    },
+    {
+      "id": "82c5773b-8b1c-46a6-bd5e-a36d0c24c0c1",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "::ffff:127.0.0.1",
+      "user_agent": "node",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:53:51.447Z"
+    },
+    {
+      "id": "9300b0f0-abcf-4488-b8f6-bcf4bdb6e512",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "LOGOUT",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {},
+      "created_at": "2026-09-28T15:44:59.998Z"
+    },
+    {
+      "id": "3004d7c2-ca60-4e5a-b729-b0853f55f78b",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:44:52.533Z"
+    },
+    {
+      "id": "80f39576-f2d4-4eeb-992c-f8c6bf3acbeb",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_FAILED",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "reason": "Incorrect password"
+      },
+      "created_at": "2026-09-28T15:44:48.584Z"
+    },
+    {
+      "id": "2ac08cab-1975-4db8-b2a7-d68ca3f88cd9",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Unknown",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T15:35:52.089Z"
+    },
+    {
+      "id": "290d399f-605f-4ac2-894c-cefa89bb260a",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "LOGOUT",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "2400:1a00:6b4e:fe49:1cca:9f7f:a628:d00, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {},
+      "created_at": "2026-09-28T15:33:00.970Z"
+    },
+    {
+      "id": "a631efa6-faea-4796-a8b1-c50aa765ee83",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Unknown",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T12:06:10.265Z"
+    },
+    {
+      "id": "7eeff4d2-10e9-446a-9f10-e53cb87ca335",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Unknown",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T12:04:13.901Z"
+    },
+    {
+      "id": "7dea8225-ff7b-4400-82bd-a3515296a253",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "Unknown",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T12:04:08.362Z"
+    },
+    {
+      "id": "b427499f-a427-43ba-a174-1829a01ce0fe",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "27.34.69.25, 169.254.169.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T11:53:51.831Z"
+    },
+    {
+      "id": "f6fb034f-a5a1-476f-996d-78b0b17b460b",
+      "user_id": null,
+      "user_email": "system / anonymous",
+      "user_role": "anonymous",
+      "action": "LOGIN_SUCCESS",
+      "entity_type": "USER",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "user_agent": "curl/7.88.1",
+      "metadata": {
+        "role": "Super Admin"
+      },
+      "created_at": "2026-09-28T11:53:05.600Z"
+    },
+    {
+      "id": "17710559-7ffa-4d71-9dbb-55713fc2d9b5",
+      "user_id": "user-admin-root",
+      "user_email": "admin@opsnexus.internal",
+      "user_role": "Super Admin",
+      "action": "SYSTEM_INSTALL_ADMIN_PROVISIONED",
+      "entity_type": "SYSTEM",
+      "entity_id": "user-admin-root",
+      "ip_address": "127.0.0.1",
+      "metadata": {
+        "notice": "First-time installation completed. Password change required on first login."
+      },
+      "created_at": "2026-09-28T11:52:59.576Z"
+    }
+  ],
+  "company_settings": [
+    {
+      "id": "setting-company-profile",
+      "key": "company_profile",
+      "value": {
+        "name": "OpsNexus Enterprise Technologies",
+        "legalName": "OpsNexus Corp Inc.",
+        "email": "admin@opsnexus.internal",
+        "phone": "+1 (555) 019-2834",
+        "address": "100 Enterprise Way, Suite 400, Tech District, CA",
+        "timezone": "America/Los_Angeles",
+        "workStart": "09:00",
+        "workEnd": "18:00",
+        "currency": "USD"
+      },
+      "updated_at": "2026-09-28T11:52:59.576Z"
+    }
+  ]
+}

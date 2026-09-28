@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+build/
+.vercel
+.output
+
+# Coverage and test artifacts
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Temporary database files
+data/*.tmp
+data/*.tmp.*
+
+# Uploads (ignore uploaded media, keep directory placeholder)
+uploads/*
+!uploads/.gitkeep
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Caches
+.turbo/
+.cache/
+.eslintcache
